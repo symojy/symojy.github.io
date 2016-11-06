@@ -105,7 +105,7 @@ ul, li {
  color: #727272;
 }
 .sub-form {
-	padding-top: 1.5em;
+	padding-top: 2em;
 }
 .center-block {
 	float: none;
@@ -164,36 +164,6 @@ ul, li {
 .fa-paper-plane {
 	padding-left: .5em;
 }
-/* ------------------------------------------------------------------------------
-   Countdown styles
--------------------------------------------------------------------------------*/
-
-ul.countdown {
-	list-style: none;
-	display: block;
-	margin-bottom: 0;
-	padding: 1.5em 0 0;
-}
-.countdown p {
-	color: #fff;
-}
-ul.countdown li {
-	display: inline-block;
-}
-ul.countdown li span {
-	font-size: 27px;
-	font-weight:600;
-}
-ul.countdown li.seperator {
-	font-size: 30px;
-	vertical-align: top;
-	padding: 0 8px;
-}
-ul.countdown li p {
-	font-size: 13px;
-	margin-bottom: 0;
-	letter-spacing:3px;
-}
 
 /* ------------------------------------------------------------------------------
    Features
@@ -219,123 +189,8 @@ ul.countdown li p {
 	margin-bottom: 0;
 	color: #888;
 }
-/* ------------------------------------------------------------------------------
-   Twitter feed
--------------------------------------------------------------------------------*/
 
 
-.center-block {
-	float: none;
-}
-
-.overlay-t {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: rgba(27, 32, 38, 0.8);
-	top: 0;
-}
-.twitter-feed h2, .contact h2 {
-	margin: 0;
-}
-.twitter-icon .fa-twitter {
-	color: #55ACEE;
-	padding: 24px 0 12px;
-	font-size: 3em;
-}
-/* ------------------------------------------------------------------------------
-   Contact
--------------------------------------------------------------------------------*/
-
-.contact h2 {
-	margin-bottom: 1.5em;
-	font-size:27px;
-	letter-spacing:3px;
-}
-.contact-form {
-	margin-top: 3em;
-}
-.contact-form .form-control {
-	border-color: #ddd;
-	margin-bottom: .75em;
-	padding: .75em 12px;
-}
-.contact-form label.error {
-	margin-bottom: 12px;
-	font-weight: 300;
-	color: #ea5050;
-}
-.contact .btn-default {
-	width: 100%;
-}
-/* ------------------------------------------------------------------------------
-   contact Form Validation
--------------------------------------------------------------------------------*/
-
-
-.contact-form label.error i {
-	padding-right: 8px;
-}
-.success-cf, .error-cf {
-	display: none;
-}
-.success-cf p {
-	background: rgba(39, 174, 96, 0.7);
-}
-.error-cf p {
-	background: rgba(231, 76, 60, 0.7);
-}
-.contact-form {
-	position: relative;
-}
-.contact-form .success-cf p, .contact-form .error-cf p {
-	position: absolute;
-	display: block;
-	top: 40%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 10;
-	color: #fff;
-	border-radius: 2px;
-	padding: .75em;
-}
-/* ------------------------------------------------------------------------------
-   Map
--------------------------------------------------------------------------------*/
-.map {
-	position: relative;
-	box-shadow: 0 0 0 4px #fff;
-	border-radius: 2px;
-}
-#map-canvas {
-	width: 100%;
-	height: 320px;
-	margin: 0px;
-	padding: 0px
-}
-#map-canvas img {
-	max-width: none;
-}
-.address {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	background: rgba(255, 255, 255, 0.71);
-	color: #666;
-	padding: 1em;
-	margin: 0 0 .75em .75em;
-}
-.address li i {
-	padding-right: 8px;
-	color: #ff5335;
-}
-.address li {
-	padding-bottom: .5em;
-}
-.address li:last-child {
-	padding-bottom: 0;
-}
 /* ------------------------------------------------------------------------------
    footer
 -------------------------------------------------------------------------------*/
@@ -528,3 +383,40 @@ font-size: 21px;
 font-size: 12.642px;
 }
 }
+
+/* ------------------------------------------------------------------------------
+   suggest
+-------------------------------------------------------------------------------*/
+
+  #suggest {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCFF;
+  }
+  #suggest div {
+    font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+    font-weight: 300;
+    font-size:16px;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    color: #619187;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #fff;
+  	border: 1px solid #fff;
+  	box-shadow: none;
+  	height: 50px;
+    text-align: left;
+
+  }
+  #suggest div.select{
+          font-size:16px;
+    color: #FFFFFF;
+    background-color: #3366FF;
+  }
+  #suggest div.over{
+    background-color: #99CCFF;
+  }
+  #suggest strong{
+    font-weight: bold;
+  }

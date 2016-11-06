@@ -10,6 +10,16 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 <META NAME="robots" CONTENT="none">
+<style type="text/css"></style>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+<script>
+    $(function () {
+      var clipboard = new Clipboard('.btn.btn-default');
+    });
+</script>
+
 </head>
 <body>
 
@@ -30,12 +40,13 @@
         <div class="sub-form text-center">
           <div class="row">
             <div class="col-md-5 center-block col-sm-8 col-xs-11">
-              <form role="form" id="mc-form" action="http://csmthemes.us3.list-manage.com/subscribe/post-json?u=9666c25a337f497687875a388&amp;id=5b881a50fb&amp;c=?">
+              <form role="form" id="mc-form">
                 <div class="input-group">
-                  <input type="email" class="form-control" placeholder="apple 🍎" required value="" name="EMAIL">
+                  <input id="text" type="text" class="form-control" placeholder="apple 🍎" required value="" name="pattern" autocomplete="off" style="display: block">
                   <span class="input-group-btn">
-                  <button type="submit" class="btn btn-default" id="mc-subscribe" value="Subscribe" name="subscribe">Copy</button>
+                  <button type="button" class="btn btn-default" id="mc-subscribe" value="Subscribe" name="copy" data-clipboard-target="#text">Copy</button>
                   </span> </div>
+                  <div id="suggest" style="display: none;"></div>
               </form>
               <p id="mc-notification"></p>
             </div>
@@ -61,7 +72,7 @@
 
 <section class="features section-spacing">
   <div class="container">
-    <h2 class="text-center">The fastest way to input emoji</h2>
+    <h2 class="text-center">The fastest way<br>to input emoji</h2>
   </div>
 </section>
 
@@ -71,18 +82,8 @@
 
 <section class="contact section-spacing" id="contact">
   <div class="container">
-    <div class="row">
 
-      <div class="col-md-5">
 
-          <div class="success-cf">
-            <p>Thank You! Your message has been sent.</p>
-          </div>
-          <div class="error-cf">
-            <p>Something went wrong, try refreshing and submitting the form again.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -114,8 +115,24 @@
 <script src="js/wow.min.js"></script>
 <script src="js/retina.min.js"></script>
 <script src="js/jquery.form.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
+
 <script src="js/jquery.simple-text-rotator.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/suggest.js"></script>
+<script src="js/list.js"></script>
+<script>
+  <!--
+  // wondowのonloadイベントでSuggestを生成
+  // (listは、list.js内で定義している)
+  var start = function(){new Suggest.LocalMulti("text", "suggest", list, {dispMax: 10, highlight: true});};
+  window.addEventListener ?
+    window.addEventListener('load', start, false) :
+    window.attachEvent('onload', start);
+
+    //-->
+</script>
+
+
+
 </body>
 </html>
