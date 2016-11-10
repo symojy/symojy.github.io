@@ -47,7 +47,7 @@ a:focus {
 	outline: none;
 }
 img {
-	max-width: 100%;
+	max-width: 50%;
 	height: auto;
 }
 ul, li {
@@ -61,7 +61,7 @@ ul, li {
 
 .main {
 	background-size: cover;
-	padding: 1em 0;
+	padding: 0;
 	position: relative !important;
 	color: #fff;
 }
@@ -105,40 +105,40 @@ ul, li {
  color: #727272;
 }
 .sub-form {
-	padding-top: 2em;
+	padding-top: 0;
 }
 .center-block {
 	float: none;
 }
 .form-control {
 	background-color: #fff;
-	border: 1px solid #fff;
+	border: 0px 0px 0px 0px solid #fff;
 	box-shadow: none;
 	height: 50px;
 	font-weight: 300;
-	border-color: #619187;
+	border-color: #000000;
 }
 .form-control:focus {
 	border-color: #fff;
 	outline: 0;
 	box-shadow: none;
-	border-color: #619187;
+	border-color: #000000;
 }
 .input-group-btn>.btn:hover, .input-group-btn>.btn:focus, .input-group-btn>.btn:active {
 	z-index: 1;
 }
 .btn-default {
-	color: #619187;
+	color: #000000;
 	background-color: #fff;;
-	border-color: #619187;
+	border-color: #000000;
  -webkit-transition: all .5s ease-out;
  transition: all .5s ease-out;
 	padding: 12px 1.5em;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
 	color: #fff;
-	background-color: #619187;
-	border-color: #619187;
+	background-color: #000000;
+	border-color: #000000;
 }
 .btn:active:focus, .btn-default:focus, .btn:focus, .btn-default:active {
 	outline: none;
@@ -149,7 +149,6 @@ ul, li {
 }
 .alert, .success {
 	padding: .5em 1em;
-	border-radius: 4px;
 	display: inline-block;
 }
 .alert {
@@ -199,7 +198,7 @@ ul, li {
 	background: #fff;
 }
 .site-footer.section-spacing {
-	padding: 4.5em 0;
+	padding: 0;
 }
 .site-footer h3 {
 	margin: 0;
@@ -229,7 +228,6 @@ ul, li {
 	padding: .8em 1em;
 	display: none;
 	z-index: 200;
-	border-radius: 5px;
  -webkit-transition: background .5s ease-in;
  transition: background .5s ease-in;
 }
@@ -370,7 +368,7 @@ transform:none;
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
  ul.countdown li span {
 font-size: 21px;
 }

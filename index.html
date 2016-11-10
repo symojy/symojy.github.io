@@ -17,7 +17,13 @@
       var clipboard = new Clipboard('.btn.btn-default');
     });
 </script>
-
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('copy').addEventListener('click', function() {
+        document.execCommand('copy');
+    });
+});
+</script>
 </head>
 <body>
 
@@ -42,7 +48,7 @@
                 <div class="input-group">
                   <input id="text" type="text" class="form-control" placeholder="apple 🍎" required value="" name="pattern" autocomplete="off" style="display: block">
                   <span class="input-group-btn">
-                  <button type="button" class="btn btn-default" id="mc-subscribe" value="Subscribe" name="copy" data-clipboard-target="#text">Copy</button>
+                  <button type="button" class="btn btn-default" id="copy" value="Subscribe" name="copy" data-clipboard-target="#text">Copy</button>
                   </span> </div>
                   <div id="suggest" style="display: none;"></div>
               </form>
@@ -54,7 +60,7 @@
 
         <!--welcome-message-->
         <header class="welcome-message text-center">
-          <h1><span class="rotate">Symojy</span></h1>
+          <img src="img/symojy_logo.png">
         </header>
         <!--welcome-message end-->
 
@@ -70,32 +76,18 @@
 
 <section class="features section-spacing">
   <div class="container">
-    <h2 class="text-center">The fastest way<br>to input emoji</h2>
+    <h2 class="text-center">The fastest way<br>to exp' your feeling</h2>
   </div>
 </section>
 
 <!--Features end-->
 
-<!--CONTACT-->
-
-<section class="contact section-spacing" id="contact">
-  <div class="container">
-
-
-    </div>
-  </div>
-</section>
-
-<!--CONTACT END-->
 
 <!--site-footer-->
-<footer class="site-footer section-spacing">
+<footer class="site-footer">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-
-
-
         <small class="wow fadeInUp">©Symojy 2016 All rights reserved.</small> </div>
     </div>
   </div>
