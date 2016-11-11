@@ -107,6 +107,8 @@ ul, li {
 .sub-form {
 	padding-top: 0;
     -webkit-appearance: none;
+    -webkit-gradient: none;
+
 }
 .center-block {
 	float: none;
