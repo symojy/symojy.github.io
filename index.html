@@ -43,7 +43,7 @@
                 <div class="input-group">
                   <input id="text" type="text" class="form-control" placeholder="floppy💾" required value="" name="pattern" autocomplete="off" style="display: block">
                   <span class="input-group-btn">
-                  <button type="button" class="btn btn-default" id="copy" value="Subscribe" name="copy" data-clipboard-target="#text">COPY</button>
+                  <button type="button" class="btn btn-default" id="copy" value="Subscribe" name="copy" data-clipboard-target="#text" onclick=”ga(‘send’, ‘event’, ‘button’, ‘copy’, ‘prealpha’);”>COPY</button>
                   </span> </div>
                   <div id="suggest" style="display: none;"></div>
               </form>
