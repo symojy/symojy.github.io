@@ -121,7 +121,6 @@ ul, li {
 
 }
 .form-control:focus {
-	border-color: #fff;
 	outline: 0;
 	box-shadow: none;
 	border-color: #000000;
@@ -146,6 +145,7 @@ ul, li {
 }
 .btn:active:focus, .btn-default:focus, .btn:focus, .btn-default:active {
 	outline: none;
+	border-color: #000000;
 }
 #mc-notification {
 	margin: .75em 0 0;
@@ -391,10 +391,10 @@ font-size: 12.642px;
 
   #suggest {
     background-color: #FFFFFF;
-    border: 1px solid #CCCCFF;
+    border: 1px solid #000;
   }
   #suggest div {
-    font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     font-size:16px;
     padding-top: 0.5em;
@@ -404,7 +404,7 @@ font-size: 12.642px;
     overflow: hidden;
     white-space: nowrap;
     background-color: #fff;
-  	border: 1px solid #fff;
+
   	box-shadow: none;
   	height: 50px;
     text-align: left;
@@ -413,10 +413,9 @@ font-size: 12.642px;
   #suggest div.select{
           font-size:16px;
     color: #FFFFFF;
-    background-color: #3366FF;
+    background-color: #f1f1f1;
   }
   #suggest div.over{
-    background-color: #99CCFF;
   }
   #suggest strong{
     font-weight: bold;
