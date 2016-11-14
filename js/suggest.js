@@ -487,7 +487,7 @@ Suggest.LocalMulti.prototype.setInputText = function(text) {
 
   if (pos == -1) {
     this.input.value = text;
-    return text.replace( /a/g , "" );
+
   } else {
     this.input.value = this.input.value.substr(0 , pos + 1) + text;
   }
