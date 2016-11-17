@@ -31,7 +31,9 @@ p {
 }
 h1, h2, h3, h5, h6 {
 	font-weight: 1500;
-  	font-size: 15px;
+  	font-size: 11px;
+		letter-spacing: 1px;
+		line-height:1.8em;
 }
 h4 {
 	font-weight: 300;
@@ -79,9 +81,12 @@ ul, li {
 .main h1 {
 	font-size: 36px;
 	color: #619187;
+
 }
 .welcome-message {
-	padding-top: 1.5em;
+	padding-top: 0;
+		margin-top: 0em;
+	margin-bottom: -1.5em;
 }
 .rotate {
 	text-shadow: none !important;
@@ -184,6 +189,7 @@ ul, li {
 .features h2 {
 	margin-bottom: 0;
 	font-size:20px;
+  letter-spacing: 3px;
 }
 .product-features {
 	margin-bottom: 3em;
