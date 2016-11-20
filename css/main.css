@@ -427,7 +427,7 @@ font-size: 12.642px;
 .ui-widget-content {
  font-family: sans-serif;
  font-weight: 300;
- font-size:16px;
+ font-size:18px;
  background:#fdfbe1;
  width: 100%;
  color: #619187;
@@ -468,7 +468,7 @@ font-size: 12.642px;
 .ui-menu .ui-menu-item a {
  /*ここは変更しないので定義不要*/
 margin-top: 20px;
- line-height: 3.8em;
+ line-height: 2.5em;
 }
 
 /* リスト内のデータのリンクカラー*/
