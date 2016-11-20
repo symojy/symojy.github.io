@@ -24,7 +24,7 @@ body {
   font-family: sans-serif;
 	font-size:20px;
 	line-height:1.8em;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 p {
 	color: #888;
@@ -98,16 +98,16 @@ ul, li {
 -------------------------------------------------------------------------------*/
 
  .form-control::-webkit-input-placeholder {
- color: #727272;
+ color: #a7a7a7;
 }
  .form-control:-moz-placeholder {
- color: #727272;
+ color: #a7a7a7;
 }
  .form-control::-moz-placeholder {
- color: #727272;
+ color: #a7a7a7;
 }
  .form-control:-ms-input-placeholder {
- color: #727272;
+ color: #a7a7a7;
 }
 .sub-form {
 	padding-top: 0;
@@ -121,14 +121,30 @@ ul, li {
 	box-shadow: none;
 	height: 50px;
 	font-weight: 300;
-	border-color: #f1f1f1 ;
+	border-color: #efefef ;
   -webkit-appearance: none;
-
+  font-family: sans-serif;
+	  letter-spacing: 1px;
+			font-size:17px;
 }
 .form-control:focus {
 	outline: 0;
 	box-shadow: none;
-	border-color: #f1f1f1;
+	border-color: #e0e0e0;
+	-webkit-box-shadow:
+					inset 0 0 25px #e4e4e4,
+							inset 0 0 25px #e4e4e4,
+							inset 0 0 25px #e4e4e4;
+
+	 -moz-box-shadow:
+					inset 0 0 10px #e4e4e4,
+							inset 0 0 10px #e4e4e4,
+							inset 0 0 10px #e4e4e4;
+
+				box-shadow:
+					inset 0 0 18px #e4e4e4,
+							inset 0 0 18px #e4e4e4,
+							inset 0 0 18px #e4e4e4;
 }
 .input-group-btn>.btn:hover, .input-group-btn>.btn:focus, .input-group-btn>.btn:active {
 	z-index: 1;
@@ -139,9 +155,13 @@ ul, li {
 	color: #000000;
 	background-color: #fff;
 	border-color: #FFF;
- -webkit-transition: all .5s ease-out;
- transition: all .5s ease-out;
-	padding: 12px 1.5em;
+ -webkit-transition: all .3s ease-out;
+ transition: all .3s ease-out;
+	padding: 12px 1.1em;
+	font-family: sans-serif;
+	  letter-spacing: 2px;
+			font-size:16px;
+			 font-weight: 900;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
 	color: #fff;
@@ -189,7 +209,7 @@ ul, li {
 .features h2 {
 	margin-bottom: 0;
 	font-size:20px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .product-features {
 	margin-bottom: 3em;
@@ -395,37 +415,6 @@ font-size: 12.642px;
    suggest
 -------------------------------------------------------------------------------*/
 
-  #suggest {
-    background-color: #FFFFFF;
-    border: 1px solid #000;
-  }
-  #suggest div {
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size:16px;
-    padding-top: 0.5em;
-    padding-left: 0.5em;
-    color: #619187;
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: #fff;
-
-  	box-shadow: none;
-  	height: 50px;
-    text-align: left;
-
-  }
-  #suggest div.select{
-          font-size:16px;
-    color: #FFFFFF;
-    background-color: #f1f1f1;
-  }
-  #suggest div.over{
-  }
-  #suggest strong{
-    font-weight: bold;
-  }
 
 	/* ------------------------------------------------------------------------------
 	   jquery UI
@@ -439,9 +428,7 @@ font-size: 12.642px;
  font-family: sans-serif;
  font-weight: 300;
  font-size:16px;
- /*枠線を黒くします*/
- /*背景は白にします*/
-background:rgba(255,255,255,0.8);
+ background:#fdfbe1;
  width: 100%;
  color: #619187;
  overflow: hidden;
@@ -449,6 +436,31 @@ background:rgba(255,255,255,0.8);
  -moz-box-sizing: border-box;
  box-sizing: border-box;
 
+ -webkit-animation-timing-function:ease-in;
+ animation-timing-function:ease-in;
+
+ -webkit-animation-name: sample_anime;
+ -webkit-animation-duration: 0.2s;
+ -webkit-animation-iteration-count: 1;
+ animation-name: sample_anime;
+ animation-duration: 0.2s;
+ animation-iteration-count: 1;
+}
+@-webkit-keyframes sample_anime {
+ from {
+		 height: 0;
+ }
+ to {
+		 height: 50px;
+ }
+}
+@keyframes sample_anime {
+ from {
+		 height: 0;
+ }
+ to {
+		 height: 50px;
+ }
 }
 
 
@@ -456,14 +468,14 @@ background:rgba(255,255,255,0.8);
 .ui-menu .ui-menu-item a {
  /*ここは変更しないので定義不要*/
 margin-top: 20px;
- line-height: 3.2em;
+ line-height: 3.8em;
 }
 
 /* リスト内のデータのリンクカラー*/
 .ui-widget-content a {
  /*赤にします*/
  padding-left: 0.8em;
- color: #619187;
+ color: #000;
 
 }
 
