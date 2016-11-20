@@ -128,7 +128,7 @@ ul, li {
 .form-control:focus {
 	outline: 0;
 	box-shadow: none;
-	border-color: #000000;
+	border-color: #f1f1f1;
 }
 .input-group-btn>.btn:hover, .input-group-btn>.btn:focus, .input-group-btn>.btn:active {
 	z-index: 1;
@@ -426,3 +426,61 @@ font-size: 12.642px;
   #suggest strong{
     font-weight: bold;
   }
+
+	/* ------------------------------------------------------------------------------
+	   jquery UI
+	-------------------------------------------------------------------------------*/
+
+.ui-helper-hidden-accessible { display:none; }
+
+
+/* リストの枠の設定 */
+.ui-widget-content {
+ font-family: sans-serif;
+ font-weight: 300;
+ font-size:16px;
+ /*枠線を黒くします*/
+ /*背景は白にします*/
+background:rgba(255,255,255,0.8);
+ width: 100%;
+ color: #619187;
+ overflow: hidden;
+ white-space: nowrap;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+
+}
+
+
+/* リスト内のデータのリンク設定 */
+.ui-menu .ui-menu-item a {
+ /*ここは変更しないので定義不要*/
+margin-top: 20px;
+ line-height: 3.2em;
+}
+
+/* リスト内のデータのリンクカラー*/
+.ui-widget-content a {
+ /*赤にします*/
+ padding-left: 0.8em;
+ color: #619187;
+
+}
+
+/* リスト内のデータフォーカス時のカラー */
+.ui-state-focus {
+ /*背景色はボックスより濃い目のピンク*/
+ background: #f1f1f1!important;
+ font-weight: bold!important;
+ /*字が目立つように濃い目のピンク*/
+ color: #000!important;
+ padding-top: 16px;
+ padding-bottom: 16px;
+ padding-right: 500px;
+ padding-left: 0.8em;
+}
+
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+ /*ここは変更しないので定義不要*/
+}
