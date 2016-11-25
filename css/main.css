@@ -23,7 +23,7 @@ body {
   margin: 0px;
   font-family: sans-serif;
 	font-size:20px;
-	line-height:1.8em;
+	line-height:0.8em;
   letter-spacing: 1px;
 }
 p {
@@ -41,7 +41,7 @@ h4 {
   letter-spacing: 1px;
 }
 a {
-	color: #ff5335;
+	color: #000;
 }
 a:hover {
 	color: #d92709;
