@@ -500,3 +500,30 @@ margin-top: 20px;
 .ui-menu .ui-menu-item a.ui-state-active {
  /*ここは変更しないので定義不要*/
 }
+
+
+.sample_01{
+	margin-right : auto;
+  margin-left : auto;
+border-collapse:collapse;
+
+}
+.sample_01 th{
+color: #333;
+background-color: #eee;
+border: 2px solid #000;
+
+}
+.sample_01 td{
+	background-color: #a5cd83;
+
+	text-align: center;
+
+	padding: 6px;
+border: 2px solid #000;
+width:35px;
+height:35px;
+font-family: sans-serif;
+font-size:15px;
+  letter-spacing: 0;
+}
